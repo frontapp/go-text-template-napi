@@ -1,10 +1,13 @@
 {
-  "name": "go-text-template-napi",
+  "name": "@frontapp/go-text-template-napi",
   "version": "0.0.2",
   "descripton": "N-API bindings for Go's text/template package",
   "author": "Andrew Drake <adrake@adrake.org>",
   "license": "Apache-2.0",
-  "repository": "github:drakedevel/go-text-template-napi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontapp/go-text-template-napi.git"
+  },
   "os": [
     "darwin",
     "linux"
@@ -17,7 +20,7 @@
   "binary": {
     "module_name": "go_text_template_napi_binding",
     "module_path": "lib/napi-v{napi_build_version}",
-    "host": "https://github.com/drakedevel/go-text-template-napi/releases/download/",
+    "host": "https://github.com/frontapp/go-text-template-napi/releases/download/",
     "remote_path": "v{version}",
     "package_name": "{platform}-{arch}-napi-v{napi_build_version}.tar.gz",
     "napi_versions": [
